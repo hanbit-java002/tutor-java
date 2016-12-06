@@ -8,7 +8,6 @@ public class Runner {
 		Dog dog = new Dog("도베르만", "검정");
 		
 		dog.sitDown();
-		dog.draw();
 		dog.standUp();
 	}
 	

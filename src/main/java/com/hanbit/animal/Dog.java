@@ -1,8 +1,5 @@
 package com.hanbit.animal;
 
-import java.io.File;
-
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
 public class Dog {
@@ -66,24 +63,4 @@ public class Dog {
 		sit = false;
 	}
 	
-	public void draw() {
-		String fileName = "";
-		
-		if (sit) {
-			fileName = "dog_sitdown.txt";
-		}
-		else {
-			fileName = "dog_standup.txt";
-		}
-		
-		try {
-			File dogFile = new File(getClass().getResource("/com/hanbit/animal/" + fileName).toURI());
-			String dog = FileUtils.readFileToString(dogFile);
-			
-			System.out.println(dog);
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 }
