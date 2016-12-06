@@ -9,6 +9,7 @@ public class Runner {
 		
 		dog.sitDown();
 		dog.draw();
+		dog.standUp();
 	}
 	
 }
