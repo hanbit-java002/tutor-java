@@ -17,4 +17,7 @@ public class Cat extends Animal {
 		return DEFAULT_NAME;
 	}
 
+	public void climbTree() {
+		System.out.println("나무에 올라감");
+	}
 }
